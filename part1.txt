@@ -1,0 +1,59 @@
+Runtime:
+1. The number of crackers in the box would determine the workload. If you think of the
+box of crackers like a list/array, you would need to iterate over each cracker to see if it is an
+elephant. Best case, the first cracker you check is an elephant, worst case, it would be the
+last cracker in the box. Either way it would be considered an O(n) operation because the
+wordload would grow linearly depending on how big your dataset (box of crackers) is.
+
+2. 
+ - O(1)
+ - O(log n)
+ - O(n)
+ - O(n log n)
+ - O(n^2)
+ - O(2^n)
+
+
+ Stacks and Queues:
+ 1. 
+    1. Stack
+    2. Queue
+    3. Stack
+ 
+ 2. Both the Hackbright Help Queue list and a print queue would be appropriate situations 
+    for a queue because they are both first-in-first-out situations. You want to print items in 
+    the order that they were added to the print queue, and you want to help people in the queue
+    in the order that they added themselves to the help queue (it would be very unfair otherwise! :)
+
+ 3. Both an undo function and a back-button on a browser are appropriate examples for a stack.
+    You want to go back to the prior page or undo the very last thing you did - they are
+    last-in-first-out situations.
+
+ Linked Lists:
+ 1. The nodes are the boxes with "Apple", "Berry", "Cherry" in them. The data
+    are the strings that are in those boxes - "Apple", "Berry" and "Cherry". The
+    head is on the far left - the box with "Apple" in it. The tail isn't specifically
+    specified, but it would be the box with "Cherry" in it, because its next reference is None. 
+
+ 2. Doubly-linked lists have both a next and a previous reference, singly-linked lists
+    only have a next reference.
+
+ 3. It is faster to append to a linked list if you keep track of the tail as an attribute
+    because that way the computer automatically knows what the end node is. Since appending
+    always adds to a list at the very end, if the last node is already known, there is 
+    no iteration needed over the rest of the list. It is an O(1) operation vs an O(n)
+    operation (which it would be if there were iteration involved). 
+
+
+Trees:
+ 1. Breadth First Search: food, Italian, Indian, Mexican, lasagna, pizza, tikka masala,
+    saag, burrito
+
+ 2. Depth First Search: food, Mexican, enchiladas, tacos, burrito, Indian, saag,
+    tikka masala, Italian, pizza, lasagna, Sicilian, NY style, Chicago style
+
+ 3. A binary search tree needs to have a rule for arrangement (generally based on greater
+    or less than), and each node can have 0, 1 or 2 children, but no more than that. Binary
+    Search Trees are often used for fast searching. Other/general trees are based on more of 
+    a hierarchical arrangement and nodes can have more than 2 children.
+      
